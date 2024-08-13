@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button";
 import Heading from "./_components/heading";
 import { Heroes } from "./_components/heroes";
-import Image from "next/image";
-import Footer from "./_components/footer";
 import Navbar from "./_components/navbar";
 
 const LandingPage = () => {
