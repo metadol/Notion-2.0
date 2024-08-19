@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SignInButton } from "@clerk/clerk-react";
 import { useConvexAuth } from "convex/react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Heading = () => {
@@ -36,10 +37,10 @@ const Heading = () => {
 const ButtonContent = ({ isAuthenticated }: { isAuthenticated: boolean }) => {
   return isAuthenticated ? (
     <Button asChild>
-      <a href="/documents">
+      <Link href="/documents">
         Enter Notion
         <ArrowRight className="ml-2 h-4 w-4" />
-      </a>
+      </Link>
     </Button>
   ) : (
     <SignInButton mode="modal">
